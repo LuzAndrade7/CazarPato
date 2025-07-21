@@ -25,12 +25,10 @@ class RankingPlayerDBHelper(context: Context)
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        TODO("Not yet implemented")
         db?.execSQL(SQL_CREATE_ENTRIES)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
         db?.execSQL(SQL_DELETE_ENTRIES)
         onCreate(db)
     }
